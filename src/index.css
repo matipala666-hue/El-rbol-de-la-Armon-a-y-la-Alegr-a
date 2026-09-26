@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Merriweather", Georgia, Cambria, serif;
+  --font-heading: "Cinzel", Georgia, serif;
+  --font-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  
+  --color-sage-50: #f4f7f4;
+  --color-sage-100: #e3ebe3;
+  --color-sage-200: #c7d7c7;
+  --color-sage-300: #a3bea3;
+  --color-sage-400: #7a9f7a;
+  --color-sage-500: #588157;
+  --color-sage-600: #3a5a40;
+  --color-sage-700: #344e41;
+  --color-sage-800: #283b32;
+  --color-sage-900: #1a2721;
+  --color-sage-950: #0f1814;
+
+  --color-cream-50: #fdfbf7;
+  --color-cream-100: #f9f5eb;
+  --color-cream-200: #f0e6d2;
+  --color-cream-300: #e5d3b3;
+  --color-cream-400: #d4a373;
+  --color-cream-500: #bc6c25;
+
+  --color-sepia-bg: #f5efe6;
+  --color-sepia-card: #e9e0d1;
+  --color-sepia-text: #433422;
+  --color-sepia-border: #d2c2ae;
+}
+
+/* Custom animations & smooth transitions */
+@keyframes pulseSubtle {
+  0%, 100% { transform: scale(1); opacity: 0.95; }
+  50% { transform: scale(1.05); opacity: 1; }
+}
+
+.animate-pulse-subtle {
+  animation: pulseSubtle 3.5s ease-in-out infinite;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.04);
+}
+::-webkit-scrollbar-thumb {
+  background: #588157;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3a5a40;
+}

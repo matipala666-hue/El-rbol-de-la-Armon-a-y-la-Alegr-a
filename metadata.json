@@ -1,0 +1,8 @@
+{
+  "name": "Remix El Árbol de la Armonía y la Alegría",
+  "description": "Ensayo filosófico interactivo sobre la dignidad humana y el respeto universal. Grupo 4 - UE Santa María Eufrasia.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
